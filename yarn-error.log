@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-navigations-stack
+  C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add exios
 
 PATH: 
   C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\MATLAB\R2018a\runtime\win64;C:\Program Files\MATLAB\R2018a\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\java\jdk-12.0.1\bin;;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/react-navigations-stack: Not found
+  Error: https://registry.yarnpkg.com/exios: Not found
       at Request.params.callback [as _callback] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66830:18)
       at Request.self.callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140464:22)
       at Request.emit (events.js:198:13)
@@ -40,6 +40,7 @@ npm manifest:
       "@expo/vector-icons": "^10.0.5",
       "axios": "^0.19.0",
       "expo": "^35.0.0",
+      "expo-font": "~7.0.0",
       "prop-types": "^15.7.2",
       "react": "16.8.3",
       "react-dom": "16.8.3",
@@ -48,6 +49,7 @@ npm manifest:
       "react-native-reanimated": "~1.2.0",
       "react-native-web": "^0.11.7",
       "react-navigation": "^4.0.10",
+      "react-navigation-stack": "^1.9.1",
       "react-navigation-tabs": "^2.5.5",
       "styled-components": "^4.4.0"
     },
@@ -4504,6 +4506,13 @@ Lockfile:
       ws "^1.1.5"
       xmldoc "^0.4.0"
       yargs "^9.0.0"
+  
+  react-navigation-stack@^1.9.1:
+    version "1.9.1"
+    resolved "https://registry.yarnpkg.com/react-navigation-stack/-/react-navigation-stack-1.9.1.tgz#6634ad4e782fa52a6c38adccac2d2b795d7de756"
+    integrity sha512-UI8P27hKzpcDTCjU8wn8LkyC9sZRYSwIfyUaU2PyOCdkoG1YOpzqbWTINiPYLglUeaGjr1iL/cyiCTBIpLFPAw==
+    dependencies:
+      prop-types "^15.7.2"
   
   react-navigation-tabs@^2.5.5:
     version "2.5.5"
