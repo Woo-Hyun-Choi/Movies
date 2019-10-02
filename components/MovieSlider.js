@@ -4,12 +4,13 @@ import styled from "styled-components";
 import Swiper from "react-native-swiper";
 import Layout from "../constants/Layout";
 import MovieSlide from "./MovieSlide";
+import { BG_COLOR } from "../constants/Colors";
 
 const SWIPER_HEIGHT = Layout.height / 3;
 
 const View = styled.View`
   height: ${SWIPER_HEIGHT};
-  background-color: {BG_COLOR};
+  background-color: ${BG_COLOR};
 `;
 
 const Text = styled.Text``;
@@ -37,7 +38,8 @@ const MovieSlider = ({ movies }) =>
           </View>
         ))}
     </Swiper>
-  ) : null;
+  ) : null;  
+  // movie가 존재하면, 이 일들을 하고, 그렇지 않으면 null을 리턴 -> slide를 주지 않음.
 
 MovieSlider.propTypes = {
   movies: PropTypes.array

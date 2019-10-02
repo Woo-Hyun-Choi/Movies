@@ -25,7 +25,6 @@ export default class extends React.Component {
       } = await movies.getNowPlaying());
     } catch (error) {
       console.log(error);
-      error = "Can't get Movies.";
     } finally {
       this.setState({
         loading: false,

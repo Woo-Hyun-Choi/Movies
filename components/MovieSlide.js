@@ -12,14 +12,14 @@ const Container = styled.View`
   flex: 1;
   position: relative;
 `;
-
+// 네트워크 이미지를 사용하려면, width와 height를 의무적으로 지정해주어야 한다.
 const BgImage = styled.Image`
   width: ${Layout.width};
   height: ${Layout.height / 3};
   opacity: 0.3;
   position: absolute;
 `;
-
+// default가 column이기 때문에 row로 바꿔준다.
 const Content = styled.View`
   flex: 1;
   flex-direction: row;
@@ -50,7 +50,6 @@ const VoteContainer = styled.View`
 `;
 
 const BtnContainer = styled.TouchableOpacity`
-  background-color: #e74c3c;
   border-radius: 5px;
   padding: 8px;
 `;
@@ -112,7 +111,7 @@ const MovieSlide = ({
 
 MovieSlide.propTypes = {
   id: PropTypes.number.isRequired,
-  posterPhoto: PropTypes.string.isRequired,
+  posterPhoto: PropTypes.string.isRequired, 
   backgroundPhoto: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   voteAvg: PropTypes.number.isRequired,
