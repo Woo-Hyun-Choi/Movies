@@ -21,7 +21,7 @@ const MovieSlider = ({ movies }) =>
       showsPagination={false}
       autoplay={true}
       style={{ height: SWIPER_HEIGHT }}
-      autoplayTimeout={3}
+      autoplayTimeout={5}
     >
       {movies
         .filter(movie => movie.backdrop_path !== null)

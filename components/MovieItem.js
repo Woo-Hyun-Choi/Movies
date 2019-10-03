@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import PropTypes from "prop-types";
 import { TouchableWithoutFeedback } from "react-native";
 import { withNavigation } from "react-navigation";
@@ -6,6 +6,7 @@ import styled from "styled-components";
 import MoviePoster from "./MoviePoster";
 import MovieRating from "./MovieRating";
 import { GREY_COLOR } from "../constants/Colors";
+
 
 const Container = styled.View`
   align-items: center;
@@ -22,7 +23,7 @@ const HContainer = styled.View`
   margin-bottom: 20px;
   flex-direction: row;
 `;
-
+// 잊지말자, React-native의 flex-Direction Default는 Column이다.
 const Column = styled.View`
   margin-left: 20px;
   width: 60%;
@@ -31,7 +32,7 @@ const Column = styled.View`
 const Overview = styled.Text`
   color: ${GREY_COLOR};
   font-size: 12px;
-  margin-vertical: 10px;
+  ${'' /* margin-vertical: 10px; */}
 `;
 
 const MovieItem = ({

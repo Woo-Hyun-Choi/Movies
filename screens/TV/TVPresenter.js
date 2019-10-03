@@ -18,7 +18,7 @@ const TVPresenter = ({ loading, popular, airingThisWeek, airingToday }) =>
       {airingToday ? (
         <Section title="Airing Today">
           {airingToday
-            .filter(tv => tv.poster_path !== null)
+            .filter(tv => tv.poster_path !== null) // poster 이미지가 없는 것은 제외한다.
             .map(tv => (
               <MovieItem
                 isMovie={false}

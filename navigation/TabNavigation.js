@@ -2,6 +2,7 @@ import React from "react";
 import { Platform } from "react-native";
 import { createAppContainer } from "react-navigation";
 import { createBottomTabNavigator } from "react-navigation-tabs";
+import { createStackNavigator } from "react-navigation-stack";
 import MoviesScreen from "../screens/Movies";
 import TVScreen from "../screens/TV";
 import SearchScreen from "../screens/Search";

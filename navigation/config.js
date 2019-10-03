@@ -7,7 +7,9 @@ export const headerStyles = {
       borderBottomWidth: 0
     },
     headerTitleStyle: {
-      color: TINT_COLOR
+      color: TINT_COLOR,
+      flex: 1,
+      textAlign: "center"
     },
     headerTintColor: TINT_COLOR
   };
