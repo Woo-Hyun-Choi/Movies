@@ -1,7 +1,7 @@
 import React from "react";
 import { Platform } from "react-native";
 import PropTypes from "prop-types";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import styled from "styled-components";
 import MoviePoster from "../../components/MoviePoster";
 import { BG_COLOR, TINT_COLOR } from "../../constants/Colors";
@@ -91,7 +91,8 @@ const DetailPresenter = ({
       <LinearGradient
         colors={["transparent", "black"]}
         start={Platform.select({
-          ios: [0, 0]
+          ios: [0, 0],
+          android: [0, 0]
         })}
         end={Platform.select({
           ios: [0, 0.5],
