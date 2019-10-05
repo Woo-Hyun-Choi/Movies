@@ -32,7 +32,7 @@ const Column = styled.View`
 const Overview = styled.Text`
   color: ${GREY_COLOR};
   font-size: 12px;
-  ${'' /* margin-vertical: 10px; */}
+  margin-vertical: 10px;
 `;
 
 const MovieItem = ({

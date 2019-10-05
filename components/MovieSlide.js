@@ -24,7 +24,7 @@ const Content = styled.View`
   flex: 1;
   flex-direction: row;
   align-items: center;
-  ${'' /* padding-horizontal: 30px; */}
+  padding-horizontal: 30px;
   justify-content: space-between;
 `;
 
