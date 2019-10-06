@@ -25,8 +25,9 @@ const HContainer = styled.View`
 `;
 // 잊지말자, React-native의 flex-Direction Default는 Column이다.
 const Column = styled.View`
+  flex: 1;
   margin-left: 20px;
-  width: 60%;
+  margin-right: 20px;
 `;
 
 const Overview = styled.Text`
@@ -96,5 +97,7 @@ MovieItem.propTypes = {
   overview: PropTypes.string,
   isMovie: PropTypes.bool
 };
+
+
 
 export default withNavigation(MovieItem);

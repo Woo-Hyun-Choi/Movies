@@ -69,8 +69,8 @@ const DataContainer = styled.View`
 const Genres = styled.Text`
   color: ${TINT_COLOR};
   font-size: 12px;
-  margin-top: 10px;
-  width: 95%;
+  margin-vertical: 10px;
+  ${'' /* width: 100%; */}
 `;
 
 const DetailPresenter = ({
